@@ -9,6 +9,32 @@ body{
     background: lightpink;
 }
 
+.navbar{
+    display: flex;
+    /* background-color: blue; */
+    height: 60px;
+    margin: 2px;
+    border-radius: 2px;
+    /* text-align: center; */
+}
+
+.item {
+    /* border: 1px #ccc solid; */
+    padding: 5px;
+    margin-right: 35px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;  
+    
+}
+
+.item:hover{
+    color: red;
+    
+}
+
+
 .wrapper{
     position: absolute;
     top: 50%;
