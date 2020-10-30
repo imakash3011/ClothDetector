@@ -1,4 +1,19 @@
-body {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  background-image: url('/public/compnet.png');
+  /* height: 500px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+#defaultCanvas0{
 
     /* method -1 use margin to centre the body  */
     /* margin: 155px 50px 75px 80px; */
@@ -19,4 +34,19 @@ body {
     background-color: rgb(241, 235, 236);
     box-shadow: 3px 3px 13px rgb(61, 60, 60);
     
+  }
+
+  #navbar{
+    background-color: lightgrey;
+    /* padding: 10px ; */
+    /* text-align: justify; */
+    height: 70px;
+  }
+
+  .team{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0px 20px 12%;
+    /* text-align:center ; */
+    color: gray;
+    font-size: 45px;
   }
