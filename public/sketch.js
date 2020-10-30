@@ -49,7 +49,6 @@ function draw() {
   fill('rgb(34, 25, 54)')
   textSize(16);
   textFont('Roboto');
-  textStyle(BOLD);
   textAlign(CENTER);
   text(label, width / 2, height - 6);
 }
