@@ -1,17 +1,21 @@
-*{
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100vh;
+  /* box-sizing: border-box;
   outline: none;
   background-image: url('/public/compnet.png');
-  /* height: 500px; */
+  /* height: 500px; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: cover; 
+  */
 }
 
-
+#particles-js {
+  height: 100%;
+  background: #262626;
+}
 
 #defaultCanvas0{
 
