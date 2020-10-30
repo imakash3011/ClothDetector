@@ -12,11 +12,6 @@ body {
   */
 }
 
-#particles-js {
-  height: 100%;
-  background: #262626;
-}
-
 #defaultCanvas0{
 
     /* method -1 use margin to centre the body  */
@@ -36,21 +31,28 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(241, 235, 236);
-    box-shadow: 3px 3px 13px rgb(61, 60, 60);
+    box-shadow: 3px 3px 10px #999;
     
   }
 
   #navbar{
-    background-color: lightgrey;
-    /* padding: 10px ; */
-    /* text-align: justify; */
-    height: 70px;
+    background-color: #DEDEDE;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px #999;
   }
 
-  .team{
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px 0px 20px 12%;
-    /* text-align:center ; */
-    color: gray;
-    font-size: 45px;
+  #navbar a { 
+    float: left;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto' ;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+  }
+
+  canvas {
+    margin: 20px;
+    border-radius: 20px;
   }
