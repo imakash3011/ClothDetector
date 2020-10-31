@@ -33,7 +33,7 @@ function setup() {
   createCanvas(760, 620);
   // Create the video
   video = createCapture(VIDEO);
-  video.size(273, 540, 40, 40);
+  video.size(283, 540, 40, 40);
   video.hide();
 
   flippedVideo = ml5.flipImage(video)
@@ -46,7 +46,7 @@ function draw() {
   // Draw the video
   image(flippedVideo, 80, 45);
   // mobile
-  image(img, 5, 35, 420, 580);
+  image(img, 5, 35, 430, 580);
 
   // Draw the label
   noStroke();
