@@ -1,17 +1,16 @@
-*{
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100vh;
+  /* box-sizing: border-box;
   outline: none;
   background-image: url('/public/compnet.png');
-  /* height: 500px; */
+  /* height: 500px; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: cover; 
+  */
 }
-
-
 
 #defaultCanvas0{
 
@@ -28,25 +27,71 @@
     /* preferred method to centre the body */
     /* method-2 : use transform to centre the body    */
     position: absolute;
-    left: 50%;
+    left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(241, 235, 236);
-    box-shadow: 3px 3px 13px rgb(61, 60, 60);
+    box-shadow: 3px 3px 10px #999;
     
   }
 
   #navbar{
-    background-color: lightgrey;
-    /* padding: 10px ; */
-    /* text-align: justify; */
-    height: 70px;
+    background-color: #DEDEDE;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px #999;
   }
 
-  .team{
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px 0px 20px 12%;
-    /* text-align:center ; */
-    color: gray;
-    font-size: 45px;
+  #navbar a { 
+    float: left;
+    color:rgb(54, 64, 112);
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+  }
+
+  canvas {
+    margin: 30px;
+    border-radius: 20px;
+  }
+
+  #img-container {
+    position: relative;
+    float: right;
+    top: 250px;
+    right: 370px;
+  }
+
+  #chatman {
+    width: 230px;
+    height: 420px;
+  }
+
+  #chat-container {
+    position: relative;
+    float: right;
+    left: 220px;
+    bottom: 240px;
+  }
+
+  #chat-box {
+    width: 530px;
+    height: 760px;
+  }
+
+  #message {
+    font-family: 'Varela Round', sans-serif;
+    text-align: justify;
+    font-size: 19px;
+  }
+
+  #message-container {
+    position: relative;
+    float: right;
+    width: 280px;
+    z-index: +1;
+    left: 655px;
+    top: 80px;
   }

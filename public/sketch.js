@@ -20,16 +20,21 @@ let flippedVideo;
 // To store the classification
 let label = "";
 
+// To store img
+let img;
+let arrow;
 // Load the model first
 function preload() {
   classifier = ml5.imageClassifier(imageModelURL);
+  img = loadImage('iphone.png');
+  arrow = loadImage('right-arrow.png');
 }
 
 function setup() {
-  createCanvas(380, 540);
+  createCanvas(760, 620);
   // Create the video
   video = createCapture(VIDEO);
-  video.size(380, 540);
+  video.size(283, 540, 40, 40);
   video.hide();
 
   flippedVideo = ml5.flipImage(video)
@@ -38,19 +43,28 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background('rgb(214,228,255)');
   // Draw the video
-  image(flippedVideo, 0, 0);
-
+  image(flippedVideo, 80, 45);
+  // Draw Mobile outline
+  image(img, 5, 35, 430, 580);
+  // Draw Arrow
+  image(arrow, 460, 278, 70, 70);
   // Draw the label
+  // white border box
+  noStroke();
   fill('white');
-  rect(-0.5, 518, 540, 28);
+  rect(600, 250, 140, 120, 16);
+  // yellowish box
+  noStroke();
+  fill('rgb(255,241,214)');
+  rect(604, 254, 132, 112, 14);
 
   fill('rgb(34, 25, 54)')
-  textSize(16);
+  textSize(24);
   textFont('Roboto');
   textAlign(CENTER);
-  text(label, width / 2, height - 6);
+  text(label, width - 90, height - 300);
 }
 
 // Get a prediction for the current video frame

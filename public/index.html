@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloth Detector</title>
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="p5.min.js"></script>
     <script src="p5.dom.min.js"></script>
@@ -12,13 +14,18 @@
 </head>
 <body>
     <div id="navbar">
-        <h2 class="team">Cloth Detector</h2>
-        <!-- <div id="error_message"></div> -->
-        <!-- <div  id="webCam">
-            <video autoplay="true" id="videoElement" >
-          </video>
-        </div> -->
+        <a href="#">CLOTHES DETECTOR</a>
     </div>
+    <div id="img-container">
+        <img src="man.png" id="chatman">
+    </div>
+    <div id="chat-container">
+        <img src="chat.svg" alt="message" id ="chat-box">
+    </div>
+    <div id="message-container">
+        <p id="message">Hi There! I'm a machine learning model that can recognise what apparel you are wearing. Just stand in front of the camera and see the magic.
+        </p>
+</div>
     <script src="sketch.js"></script>
 </body>
 </html>
