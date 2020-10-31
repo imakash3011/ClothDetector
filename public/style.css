@@ -43,9 +43,9 @@ body {
 
   #navbar a { 
     float: left;
-    color: black;
+    color:rgb(54, 64, 112);
     text-align: center;
-    font-family: 'Roboto' ;
+    font-family: 'Alfa Slab One', cursive;;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 22px;
