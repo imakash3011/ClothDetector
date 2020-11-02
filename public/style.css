@@ -2,20 +2,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  /* box-sizing: border-box;
-  outline: none;
-  background-image: url('/public/compnet.png');
-  /* height: 500px; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  */
 }
 
 #defaultCanvas0{
-
-    /* method -1 use margin to centre the body  */
-    /* margin: 155px 50px 75px 80px; */
 
     display: flex;
   
@@ -23,9 +12,6 @@ body {
 
     align-items: center;
 
-  
-    /* preferred method to centre the body */
-    /* method-2 : use transform to centre the body    */
     position: absolute;
     left: 30%;
     top: 50%;
