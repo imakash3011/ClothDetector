@@ -57,7 +57,7 @@ function draw() {
   rect(600, 250, 140, 120, 16);
   // yellowish box
   noStroke();
-  fill('rgb(255,241,214)');
+  fill('rgb(245,245,239)');
   rect(604, 254, 132, 112, 14);
 
   fill('rgb(34, 25, 54)')
