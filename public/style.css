@@ -20,8 +20,6 @@ body {
     top: 45%;
     transform: translate(-50%, -50%);
     background-color: rgb(241, 235, 236);
-    box-shadow: 3px 3px 10px #999;
-    
   }
 
   canvas {
