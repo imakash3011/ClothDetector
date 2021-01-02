@@ -3,6 +3,8 @@ body {
   padding: 0;
   height: 100vh;
   background-color: #f5f5ef;
+  background: url("./grid-bg.png");
+  background-size: cover;
 }
 
 #defaultCanvas0{
