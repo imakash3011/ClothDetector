@@ -1,7 +1,6 @@
 spec:
   name: cloth-detector
   services:
-  - name: web
    git:
      branch: master
      repo_clone_url: https://github.com/sisodiya2421/ClothDetector.git
