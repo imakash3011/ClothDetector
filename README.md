@@ -6,7 +6,7 @@ This application uses machine learning model trained using [teachable machine](h
 Currently it has been trained to detect only t-shirts and shirts, but can be modified to detect more clothing segments
 
 ### Application Link:
-https://clothdetector-69r64.ondigitalocean.app/
+https://clothdetector-kegak.ondigitalocean.app/
 
 Guide:
  * Visit the app using a web browser
