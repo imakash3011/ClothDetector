@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloth Detector</title>
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='./ClothesDetectorIcons.svg' />
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="p5.min.js"></script>
     <script src="p5.dom.min.js"></script>
     <script src="ml5.min.js" type="text/javascript"></script>
 </head>
-<body>
-    <div id="navbar">
-        <a href="#">CLOTHES DETECTOR</a>
+<body onload="setTimeout(myFunction, 3000)">
+    <!-- <div class='spinner-wrapper'>
+        <div class="spinner"></div>
+    </div> -->
+    <div class="ps-5 pe-0 d-flex container h-100 align-items-center flex-row-reverse">
+        <div class="d-flex flex-column">
+            <img src="./message.svg" class="p-2 img-fluid" align="right" width="628px" height="628px" alt="Message Box">
+            <div class="container p-2 align-items-center" align="center">
+                <a href="https://github.com/sisodiya2421/ClothDetector" target="_blank"><img src="./github-icon.svg" class="img-fluid" alt="Message Box"></a>
+                <span style="display:inline-block; width: 100px;"></span>
+                <a href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/sisodiya2421/ClothDetector/tree/master">
+                    <img src="https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg" alt="Deploy to DO">
+                </a>
+            </div>
+        </div>
     </div>
-    <div id="img-container">
-        <img src="man.png" id="chatman">
-    </div>
-    <div id="chat-container">
-        <img src="chat.svg" alt="message" id ="chat-box">
-    </div>
-    <div id="message-container">
-        <p id="message">Hi There! I'm a machine learning model that can recognise what apparel you are wearing. Just stand in front of the camera and see the magic.
-        </p>
-</div>
     <script src="sketch.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+        function myFunction() {
+            $(".spinner-wrapper").fadeOut("slow");
+        }
+    </script>
 </body>
 </html>

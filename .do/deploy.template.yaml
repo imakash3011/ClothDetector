@@ -1,0 +1,9 @@
+spec:
+  name: cloth-detector
+  services:
+  - name: cloth-detector
+    git:
+      branch: master
+      repo_clone_url: https://github.com/sisodiya2421/ClothDetector.git
+    build_command: npm install
+    run_command: node index.js

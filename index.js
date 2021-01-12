@@ -1,7 +1,11 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const PORT = 3000;
+let port = process.env.PORT;
 
-app.use(express.static('public'));
+if (port == null || port == "") {
+    port = 8080;
+}
 
-app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
+app.use(express.static("public"))
+
+app.listen(port, () => console.log(`Server listening on port: ${port}`));
